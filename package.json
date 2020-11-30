@@ -5,11 +5,22 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+  },
+  "build": {
+    "appId": "learnjs",
+    "mac": {
+      "category": "Productivity"
+    }
+  },
+  "devDependencies": {
+    "electron-builder": "^22.9.1",
     "electron": "^11.0.3"
   }
 }
